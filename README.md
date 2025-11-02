@@ -19,7 +19,7 @@ echo "HELLO FROM GIT" > readme.txt
 git status
 
 # Add all files to staging area
-git add -A
+git add readme.txt
 
 # Commit the changes with a message
 git commit -m "Initial commit - added readme file"
@@ -72,4 +72,28 @@ git status
 git add .
 git commit -m "Updated readme with new content"
 git push origin master
+
+
+
+
+docker normal commands / 10.	Pull Ubuntu image in Docker and execute bash 
+
+sudo docker --version               # Check Docker version
+sudo docker status
+sudo docker info 
+sudo docker pull ubuntu             # Pull latest Ubuntu image
+sudo docker images                  # List all images
+sudo docker run -it ubuntu /bin/bash     # Run Ubuntu container in interactive mode
+pwd                                 # Show current directory inside Ubuntu container
+ls                                  # List files in the current directory
+mkdir testfolder                    # Create a test folder
+cd testfolder                       # Move into the folder
+echo "Hello from Docker Ubuntu!" > hello.txt   # Create a text file
+cat hello.txt                       # Display file content
+exit                                # Exit from Ubuntu container
+sudo docker ps -a                   # Show all containers (running + stopped)
+
+sudo docker pull alpine
+sudo docker rmi alpine
+
 
