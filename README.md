@@ -97,3 +97,29 @@ sudo docker pull alpine
 sudo docker rmi alpine
 
 
+q17 : 
+code for html 
+<html>
+<body>
+  <h1>HELLO</h1>
+</body>
+</html>
+
+steps for 17 : 
+mkdir html
+cd html
+nano index.html
+vim Dockerfile
+press i 
+from httpd
+copy ./ /usr/local/apache2/htdocs/
+press: esc+shift+:
+wq
+sudo docker build -t index .
+sudo docker run -d -p 8080:80 index
+curl http://localhost:8080
+go in the instance --> security group --> edit inbound rules --> tcp and port 8080
+chrome --> http://ip:8080
+
+
+
