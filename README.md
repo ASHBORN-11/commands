@@ -61,3 +61,15 @@ git remote add origin https://github.com/username/myrepo.git
 git push -u origin master
 
 
+for pulling : 
+git clone https://github.com/ASHBORN-11/XIE.git   or u can do   cd ~/sup  git init   git remote add origin https://github.com/ASHBORN-11/for_pulling.git  n then from 69 
+cd sup
+
+
+git pull origin master
+echo "HELLO MAU" >> readme.txt
+git status
+git add .
+git commit -m "Updated readme with new content"
+git push origin master
+
