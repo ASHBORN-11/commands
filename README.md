@@ -61,8 +61,3 @@ git remote add origin https://github.com/username/myrepo.git
 git push -u origin master
 
 
-# Make another change and push again
-echo "SECOND UPDATE" > readme.txt
-git add -A
-git commit -m "Updated readme with second message"
-git push origin master
